@@ -39,7 +39,7 @@ public class EntitySqlQueryBuilderInsert implements EntitySqlQueryBuilder {
                 case Computed:
                     break;
                 default:
-                    if (insertFieldsEnabled && insertFields.contains(schema.getColumnName()))
+                    if (insertFieldsEnabled && !insertFields.contains(schema.getColumnName()))
                         continue;
                     text.append(schema.getColumnName())
                             .append(',');
