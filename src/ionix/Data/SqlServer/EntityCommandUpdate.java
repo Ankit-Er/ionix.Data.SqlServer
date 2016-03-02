@@ -8,8 +8,8 @@ import java.util.HashSet;
 
 public class EntityCommandUpdate<TEntity> extends EntityCommandExecute<TEntity> implements ionix.Data.EntityCommandUpdate<TEntity> {
 
-    public EntityCommandUpdate(DbAccess dataAccess, Class<TEntity> entityClass){
-        super(dataAccess, entityClass);
+    public EntityCommandUpdate(Class<TEntity> entityClass, DbAccess dataAccess){
+        super(entityClass, dataAccess);
     }
 
 

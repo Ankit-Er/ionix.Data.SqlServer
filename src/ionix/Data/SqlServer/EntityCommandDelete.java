@@ -5,8 +5,8 @@ import ionix.Data.*;
 
 public class EntityCommandDelete<TEntity> extends EntityCommandExecute<TEntity> implements ionix.Data.EntityCommandDelete<TEntity> {
 
-    public EntityCommandDelete(DbAccess dataAccess, Class<TEntity> entityClass) {
-        super(dataAccess, entityClass);
+    public EntityCommandDelete(Class<TEntity> entityClass, DbAccess dataAccess) {
+        super(entityClass, dataAccess);
     }
 
     @Override

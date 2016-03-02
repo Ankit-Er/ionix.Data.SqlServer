@@ -8,8 +8,8 @@ import java.util.HashSet;
 
 public class EntityCommandInsert<TEntity> extends EntityCommandExecute<TEntity> implements ionix.Data.EntityCommandInsert<TEntity> {
 
-    public EntityCommandInsert(DbAccess dataAccess, Class<TEntity> entityClass) {
-        super(dataAccess, entityClass);
+    public EntityCommandInsert(Class<TEntity> entityClass, DbAccess dataAccess) {
+        super(entityClass, dataAccess);
     }
 
 
